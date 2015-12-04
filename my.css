@@ -1,0 +1,20 @@
+﻿.name-text {
+    width: 100px;
+    display: inline-block;
+}
+.counter-text {margin: 1cm;}
+
+.right-list {
+display:inline;
+    padding-bottom: 10px;
+    width: 500px;
+
+}
+
+.left-list {
+
+    float:left;
+    padding-bottom: 10px;
+    width: 500px;
+
+}

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>shopping-list</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+    <script src="JavaScript.js"></script>
+    <style>
+        .name-text { width: 100px;display: inline-block;}
+        .counter-text {margin: 1cm;}
+        .right-list {display:inline;padding-bottom: 10px;width: 500px;}
+        .left-list {float:left;padding-bottom: 10px;width: 500px;}
+    </style>
+</head>
+<body ng-app="nameApp" ng-controller="NameCtrl">
+    <div class="inline">
+        <div class="left-list" >
+
+            <form ng-submit="addName()" > <!--this angular directive ng submit instead of refreshing the page, stay on this page and call this function-->
+                <input type="text" ng-model="newName">
+                <input type="number" ng-model="newAmount">
+                <input type="text" ng-model="newPrice">
+             <!--Text input is bound to entered name property of the ng-model-->
+                <input type="submit" id="items" value="add item"> <!--here is the add-button-->
+            </form>
+
+            <h3>noch einzukaufen:</h3>
+
+            <ul id="left-list">
+                <li ng-repeat="name in items">{{name}}
+                    <!--Now we integrate the remove function to the user interface. In this ng repeat for each 'name' inside li-element add a link href equals empty string. The purpose of that empty string is just that it looks like a link-->
+                    <span class="name-text">{{item.name}}</span>
+                    <button oncklick="addFunction(name) "style="color:red" ng-click="removeName(name)">x</button> <!--ul/li ist an ordered list; the ng-repeat directive says, when it resolves to 'names' you have to look at the scope $scope.names, which is bound under the controller NameCtrl-->
+                    <!--ng-click is a directive that you can execute an angular expression when you click on that thing.-->
+                    <!--<span class="counter-text">{{counter}}</span>
+                    <button ng-click="counter = counter + 1">+</button>
+                    <button ng-click="counter = counter - 1">-</button>-->
+
+                    <form ng-submit="addName()" action="action_page.php">
+                        <input ng-model="name.amount" type="number" name="quantity" min="0" max="1000">
+                        <input ng-model="name.price" type="number" step="0.01" name="quantity" min="0" max="1000">
+                    </form>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-list">
+            <h3>
+                erledigt:
+            </h3>
+            <ul> 
+                <li ng-repeat="name in checked"> 
+                    {{name}}
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
