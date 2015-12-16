@@ -38,3 +38,23 @@ C:\Users\Zem\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs
 C:\Users\Zem\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\obj\Debug\shop 3 inputs.csprojResolveAssemblyReference.cache
 C:\Users\Zem\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\obj\Debug\shop 3 inputs.dll
 C:\Users\Zem\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\obj\Debug\shop 3 inputs.pdb
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\roslyn\csc.exe
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\roslyn\vbc.exe
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\roslyn\VBCSCompiler.exe
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\shop 3 inputs.dll.config
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\shop 3 inputs.dll
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\shop 3 inputs.pdb
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\obj\Debug\shop 3 inputs.csprojResolveAssemblyReference.cache
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\obj\Debug\shop 3 inputs.dll
+C:\Users\chaeh\Documents\Visual Studio 2015\Projects\WebApplication2\shop 3 inputs\obj\Debug\shop 3 inputs.pdb

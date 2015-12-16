@@ -43,16 +43,21 @@ nameApp.controller('NameCtrl', function ($scope) {
     };
 
     $scope.onAmountChange = function (arrayItem, oldAmount) {
-        //calucalte difference
+        //calculate difference
         var difference = arrayItem.amount - parseFloat(oldAmount);
-        if(differenc > 0)
+        if(difference > 0)
             return;
 
 
-        if(arrayItem exists in selectedArray){
-            //change amount
-        }else{
-        // selectedArray.push
+
+        if (typeof name == "undefined") { //arrayItem exists in selectedArray
+
+                var name = { };
+                arrayItem.amount = arrayItem.amount + difference;  //change amount
+
+        } else { //arrayItem doesn't exist in selectedArray
+            $scope.items.push(arrayItem); // selectedArray.push
+            arrayItem.amount = arrayItem.amount + difference;  //change amount
         }
 }
 
