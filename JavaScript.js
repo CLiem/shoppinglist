@@ -42,23 +42,24 @@ nameApp.controller('NameCtrl', function ($scope) {
         $scope.checked.push(name);
     };
 
-    $scope.onAmountChange = function (arrayItem, oldAmount) {
-        //calculate difference
-        var difference = arrayItem.amount - parseFloat(oldAmount);
-        if(difference > 0)
+    $scope.checkObject = function (items, checked) {
+        if (items.indexOf(checked) === -1) { //arrayItem doesn't exist in selectedArray
+            items.push(checked); // or:  $scope.items.push(arrayItem) ?
+        } else if (items.indexOf(checked) > -1) {
             return;
+        }
+    };
 
+    $scope.onAmountChange = function (arrayItem, oldAmount) {
 
-
-        if (typeof name == "undefined") { //arrayItem exists in selectedArray
-
-                var name = { };
-                arrayItem.amount = arrayItem.amount + difference;  //change amount
-
-        } else { //arrayItem doesn't exist in selectedArray
-            $scope.items.push(arrayItem); // selectedArray.push
+        var difference = arrayItem.amount - parseFloat(oldAmount);//calculate difference
+        if (difference > 0) //bedeutet links um Wert erhöht
+            return; //tuhe nichts
+        else if (difference < 0) {
+            var name = {}; //?
             arrayItem.amount = arrayItem.amount + difference;  //change amount
         }
-}
+    };
+
 
 });
