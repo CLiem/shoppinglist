@@ -42,7 +42,7 @@ nameApp.controller('NameCtrl', function ($scope) {
         $scope.checked.push(name);
     };
 
-    $scope.checkObject = function (items, checked) {
+    checkObject = function (items, checked) {
         if (items.indexOf(checked) === -1) { //arrayItem doesn't exist in selectedArray
             items.push(checked); // or:  $scope.items.push(arrayItem) ?
         } else if (items.indexOf(checked) > -1) {
