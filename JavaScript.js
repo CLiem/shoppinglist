@@ -42,12 +42,13 @@ nameApp.controller('NameCtrl', function ($scope) {
         $scope.checked.push(name);
     };
 
-    checkObject = function (items, checked) {
+    $scope.checkObject = function (items, checked) {
         if (items.indexOf(checked) === -1) { //arrayItem doesn't exist in selectedArray
             items.push(checked); // or:  $scope.items.push(arrayItem) ?
         } else if (items.indexOf(checked) > -1) {
             return;
         }
+        checkObject();
     };
 
     $scope.onAmountChange = function (arrayItem, oldAmount) {
@@ -58,6 +59,8 @@ nameApp.controller('NameCtrl', function ($scope) {
         else if (difference < 0) {
             var name = {}; //?
             arrayItem.amount = arrayItem.amount + difference;  //change amount
+
+            onAmountChange();
         }
     };
 

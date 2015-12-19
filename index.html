@@ -17,6 +17,11 @@
     <div class="inline">
         <div class="left-list">
 
+            Search:<input ng-model="query" type="text" />
+            <form>
+                <span ng-repeat="name in items | filter:query">{{item.name}}</span>
+            </form>
+
             <form ng-submit="addName()" > <!--this angular directive ng submit instead of refreshing the page, stay on this page and call this function-->
                 <input type="text" ng-model="newName">
                 <input type="number" ng-model="newAmount">
@@ -37,9 +42,10 @@
                     <button ng-click="counter = counter - 1">-</button>-->
 
                     <form ng-submit="addName()" action="action_page.php">
-                        <input ng-model="name.amount" ng-click="checkObject()" ng-change="onAmountChange()" type="number" name="quantity" min="0" max="1000">
+                        <input ng-model="name.amount" ng-click="checkObject(items, checked)" ng-change="onAmountChange(arrayItem, oldAmount)" type="number" name="quantity" min="0" max="1000">
                         <input ng-model="name.price" type="number" step="0.01" name="quantity" min="0" max="1000">
                     </form>
+
 
 </li>
             </ul>
